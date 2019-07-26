@@ -86,7 +86,7 @@ def all_supplies_in_holidays(holiday_hash)
       capitalized_holiday = key.to_s.split("_").map(&:capitalize).join(' ')
       
       puts "#{season.to_s.capitalize}:"
-      puts "  #{capitalized_holiday}: #{value}"
+      puts "  #{capitalized_holiday}: #{value.join}"
     end
   end
     

@@ -83,9 +83,10 @@ def all_supplies_in_holidays(holiday_hash)
     holiday.each do |key, value|
       #key = :christmas 
       #value = ["Lights", "Wreath"]
-      capitalized_holiday = key.to_s.split("_").map(&:capitalize).join(' ')
+      #capitalized_holiday = key.to_s.split("_").map(&:capitalize).join(' ')
+      
       puts "#{season.to_s.capitalize}:"
-      puts "  #{capitalized_holiday}: #{value.join(", ")}"
+      puts "  #{key}: #{value}"
     end
   end
     
